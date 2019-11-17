@@ -10,9 +10,8 @@
 ### 3.实验
 
 ### 4.核心代码	
-···
-        for(int i = 7; i <= str.length(); i=i+8) {
-        	str.insert(i,',');
+       for(int i = 7; i <= str.length(); i=i+8) {
+            str.insert(i,',');
         }
         // 从后往前每隔七位插入逗号
            
@@ -23,11 +22,8 @@
         for(int j = 16; j <= str.length(); j=j+18) {
         	str.insert(j,"\r\n");
         }
-···
 以上代码运行后，可达成“每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。””的要求。
 
-
-···
         System.out.println(key + " 在这段话中出现的次数为 " + num);
         }
 
@@ -37,7 +33,7 @@
         int len2 = key.length(); //待统计词语的长度
 
         for(i=0; i<len1-len2; i++){
-        	for(j=0; j<len2; j++){ //统计词语和这段话逐字符进行比较
+            for(j=0; j<len2; j++){ //统计词语和这段话逐字符进行比较
         		if(key.charAt(j) != source.charAt(j + i)){
         			break;
         }
@@ -46,7 +42,6 @@
         count++;
         }
         }
-···
 以上代码运行后，可达成“统计古诗中某个字或词出现频率”的要求。
 ### 5.实验结果
 ![images](https://github.com/Linjieken/java-4/blob/master/images/微信图片_20191117200925.png)
