@@ -8,19 +8,24 @@
 2.允许提供输入参数，统计古诗中某个字或词出现的次数
 3.考虑操作中可能出现的异常，在程序中设计异常处理程序
 ### 3.实验过程（怎么做）
-
-### 4.核心代码	
-       for(int i = 7; i <= str.length(); i=i+8) {
-            str.insert(i,',');
+1.实验要求在每七个汉字后加入一个标点符号。于是写程序如下
+···
+        for(int i = 7; i <= str.length(); i=i+8) {
+         str.insert(i,',');
         }
-        // 从后往前每隔七位插入逗号
-           
+···
+### 4.核心代码	
+        for(int i = 7; i <= str.length(); i=i+8) {
+         str.insert(i,',');
+        }
+        
+        
         for(int k = 15; k <= str.length(); k=k+16) {
-        	str.deleteCharAt(k);
+         str.deleteCharAt(k);
             str.insert(k,'。');
         }
-        for(int j = 16; j <= str.length(); j=j+18) {
-        	str.insert(j,"\r\n");
+        for(int j = 16; j <= str.length(); j=j+17) {
+         str.insert(j,"\n");
         }
 以上代码运行后，可达成“每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。””的要求。
 
